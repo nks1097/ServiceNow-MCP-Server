@@ -1,0 +1,23 @@
+{
+  "name": "servicenow_atualizar_artigo_conhecimento",
+  "description": "Atualiza o texto ou metadados de um artigo da Base de Conhecimento.",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "dados_json": {
+        "additionalProperties": true,
+        "title": "Dados Json",
+        "type": "object"
+      }
+    },
+    "required": [
+      "sys_id",
+      "dados_json"
+    ],
+    "title": "servicenow_atualizar_artigo_conhecimentoArguments",
+    "type": "object"
+  }
+}

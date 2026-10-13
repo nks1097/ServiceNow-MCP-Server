@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_criar_conjunto_alteracoes",
+  "description": "Cria um novo Update Set em estado 'in progress' (sys_update_set).",
+  "parameters": {
+    "properties": {
+      "nome": {
+        "title": "Nome",
+        "type": "string"
+      },
+      "descricao": {
+        "default": "",
+        "title": "Descricao",
+        "type": "string"
+      }
+    },
+    "required": [
+      "nome"
+    ],
+    "title": "servicenow_criar_conjunto_alteracoesArguments",
+    "type": "object"
+  }
+}

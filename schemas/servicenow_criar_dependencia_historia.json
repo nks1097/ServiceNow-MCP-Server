@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_criar_dependencia_historia",
+  "description": "Cria uma dependência entre duas histórias de usuário (rm_story_dependency).",
+  "parameters": {
+    "properties": {
+      "historia_sucessora_sys_id": {
+        "title": "Historia Sucessora Sys Id",
+        "type": "string"
+      },
+      "historia_predecessora_sys_id": {
+        "title": "Historia Predecessora Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "historia_sucessora_sys_id",
+      "historia_predecessora_sys_id"
+    ],
+    "title": "servicenow_criar_dependencia_historiaArguments",
+    "type": "object"
+  }
+}

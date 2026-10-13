@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_descrever_campos_tabela",
+  "description": "Inspeciona o dicionário de dados (sys_dictionary) para descobrir campos técnicos e tipos.",
+  "parameters": {
+    "properties": {
+      "tabela": {
+        "title": "Tabela",
+        "type": "string"
+      },
+      "limite": {
+        "default": 100,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "tabela"
+    ],
+    "title": "servicenow_descrever_campos_tabelaArguments",
+    "type": "object"
+  }
+}

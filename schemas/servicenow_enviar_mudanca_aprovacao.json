@@ -1,0 +1,17 @@
+{
+  "name": "servicenow_enviar_mudanca_aprovacao",
+  "description": "Envia uma solicitação de mudança para o estado de aprovação ('Authorize' / state=-4).",
+  "parameters": {
+    "properties": {
+      "mudanca_sys_id": {
+        "title": "Mudanca Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "mudanca_sys_id"
+    ],
+    "title": "servicenow_enviar_mudanca_aprovacaoArguments",
+    "type": "object"
+  }
+}

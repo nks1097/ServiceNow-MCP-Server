@@ -1,0 +1,39 @@
+{
+  "name": "servicenow_listar_itens_catalogo",
+  "description": "Lista itens do catálogo de serviços do ServiceNow (tabela sc_cat_item).",
+  "parameters": {
+    "properties": {
+      "filtro_termo": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Filtro Termo"
+      },
+      "categoria_sys_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Categoria Sys Id"
+      },
+      "limite": {
+        "default": 20,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "title": "servicenow_listar_itens_catalogoArguments",
+    "type": "object"
+  }
+}

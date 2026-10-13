@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_remover_membros_grupo",
+  "description": "Remove a vinculação de um usuário com um grupo na tabela 'sys_user_grmember'.",
+  "parameters": {
+    "properties": {
+      "grupo_sys_id": {
+        "title": "Grupo Sys Id",
+        "type": "string"
+      },
+      "usuario_sys_id": {
+        "title": "Usuario Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "grupo_sys_id",
+      "usuario_sys_id"
+    ],
+    "title": "servicenow_remover_membros_grupoArguments",
+    "type": "object"
+  }
+}

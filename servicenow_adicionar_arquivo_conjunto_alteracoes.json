@@ -1,0 +1,32 @@
+{
+  "name": "servicenow_adicionar_arquivo_conjunto_alteracoes",
+  "description": "Registra uma alteração XML dentro de um Update Set (tabela sys_update_xml).",
+  "parameters": {
+    "properties": {
+      "update_set_sys_id": {
+        "title": "Update Set Sys Id",
+        "type": "string"
+      },
+      "nome_registro": {
+        "title": "Nome Registro",
+        "type": "string"
+      },
+      "tipo": {
+        "title": "Tipo",
+        "type": "string"
+      },
+      "payload_xml": {
+        "title": "Payload Xml",
+        "type": "string"
+      }
+    },
+    "required": [
+      "update_set_sys_id",
+      "nome_registro",
+      "tipo",
+      "payload_xml"
+    ],
+    "title": "servicenow_adicionar_arquivo_conjunto_alteracoesArguments",
+    "type": "object"
+  }
+}

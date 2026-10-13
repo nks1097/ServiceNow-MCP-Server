@@ -1,0 +1,9 @@
+{
+  "name": "servicenow_testar_conexao",
+  "description": "Testa conectividade e validação da sessão com a instância do ServiceNow (dev420110).",
+  "parameters": {
+    "properties": {},
+    "title": "servicenow_testar_conexaoArguments",
+    "type": "object"
+  }
+}

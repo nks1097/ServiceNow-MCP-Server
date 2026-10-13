@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_criar_base_conhecimento",
+  "description": "Cria uma nova Base de Conhecimento (tabela kb_knowledge_base).",
+  "parameters": {
+    "properties": {
+      "titulo": {
+        "title": "Titulo",
+        "type": "string"
+      },
+      "descricao": {
+        "default": "",
+        "title": "Descricao",
+        "type": "string"
+      }
+    },
+    "required": [
+      "titulo"
+    ],
+    "title": "servicenow_criar_base_conhecimentoArguments",
+    "type": "object"
+  }
+}

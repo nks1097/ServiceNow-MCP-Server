@@ -1,0 +1,32 @@
+{
+  "name": "servicenow_criar_categoria_catalogo",
+  "description": "Cria uma nova categoria no catálogo de serviços (sc_category).",
+  "parameters": {
+    "properties": {
+      "titulo": {
+        "title": "Titulo",
+        "type": "string"
+      },
+      "descricao": {
+        "default": "",
+        "title": "Descricao",
+        "type": "string"
+      },
+      "catalogo_sys_id": {
+        "default": "",
+        "title": "Catalogo Sys Id",
+        "type": "string"
+      },
+      "categoria_pai_sys_id": {
+        "default": "",
+        "title": "Categoria Pai Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "titulo"
+    ],
+    "title": "servicenow_criar_categoria_catalogoArguments",
+    "type": "object"
+  }
+}

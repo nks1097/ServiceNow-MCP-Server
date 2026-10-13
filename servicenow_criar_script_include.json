@@ -1,0 +1,32 @@
+{
+  "name": "servicenow_criar_script_include",
+  "description": "Cria um novo Script Include com código JavaScript no ServiceNow (sys_script_include).",
+  "parameters": {
+    "properties": {
+      "nome": {
+        "title": "Nome",
+        "type": "string"
+      },
+      "codigo_javascript": {
+        "title": "Codigo Javascript",
+        "type": "string"
+      },
+      "descricao": {
+        "default": "",
+        "title": "Descricao",
+        "type": "string"
+      },
+      "chamavel_pelo_cliente": {
+        "default": false,
+        "title": "Chamavel Pelo Cliente",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "nome",
+      "codigo_javascript"
+    ],
+    "title": "servicenow_criar_script_includeArguments",
+    "type": "object"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "servicenow_adicionar_tarefa_mudanca",
+  "description": "Adiciona uma tarefa de execução técnica a uma solicitação de mudança (tabela change_task).",
+  "parameters": {
+    "properties": {
+      "mudanca_sys_id": {
+        "title": "Mudanca Sys Id",
+        "type": "string"
+      },
+      "titulo_tarefa": {
+        "title": "Titulo Tarefa",
+        "type": "string"
+      },
+      "descricao_tarefa": {
+        "default": "",
+        "title": "Descricao Tarefa",
+        "type": "string"
+      },
+      "grupo_atribuicao": {
+        "default": "",
+        "title": "Grupo Atribuicao",
+        "type": "string"
+      }
+    },
+    "required": [
+      "mudanca_sys_id",
+      "titulo_tarefa"
+    ],
+    "title": "servicenow_adicionar_tarefa_mudancaArguments",
+    "type": "object"
+  }
+}

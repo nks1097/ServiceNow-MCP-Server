@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_listar_solicitacoes_mudanca",
+  "description": "Lista solicitações de mudança (change_request) com opções de filtros.",
+  "parameters": {
+    "properties": {
+      "filtro_query": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Filtro Query"
+      },
+      "limite": {
+        "default": 20,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "title": "servicenow_listar_solicitacoes_mudancaArguments",
+    "type": "object"
+  }
+}

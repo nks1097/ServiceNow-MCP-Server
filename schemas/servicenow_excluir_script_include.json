@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_excluir_script_include",
+  "description": "Exclui um Script Include da instância (exige confirmar=True).",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "confirmar": {
+        "default": false,
+        "title": "Confirmar",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "sys_id"
+    ],
+    "title": "servicenow_excluir_script_includeArguments",
+    "type": "object"
+  }
+}

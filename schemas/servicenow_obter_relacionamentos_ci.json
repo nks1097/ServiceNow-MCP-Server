@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_obter_relacionamentos_ci",
+  "description": "Consulta relacionamentos upstream e downstream de um CI na tabela 'cmdb_rel_ci'.",
+  "parameters": {
+    "properties": {
+      "ci_sys_id": {
+        "title": "Ci Sys Id",
+        "type": "string"
+      },
+      "limite": {
+        "default": 20,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "ci_sys_id"
+    ],
+    "title": "servicenow_obter_relacionamentos_ciArguments",
+    "type": "object"
+  }
+}

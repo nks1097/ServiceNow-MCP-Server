@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_criar_categoria_conhecimento",
+  "description": "Cria uma categoria em uma Base de Conhecimento (tabela kb_category).",
+  "parameters": {
+    "properties": {
+      "base_conhecimento_sys_id": {
+        "title": "Base Conhecimento Sys Id",
+        "type": "string"
+      },
+      "rotulo_categoria": {
+        "title": "Rotulo Categoria",
+        "type": "string"
+      }
+    },
+    "required": [
+      "base_conhecimento_sys_id",
+      "rotulo_categoria"
+    ],
+    "title": "servicenow_criar_categoria_conhecimentoArguments",
+    "type": "object"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_mover_item_catalogo",
+  "description": "Move um item do catálogo de serviços para uma nova categoria.",
+  "parameters": {
+    "properties": {
+      "item_sys_id": {
+        "title": "Item Sys Id",
+        "type": "string"
+      },
+      "nova_categoria_sys_id": {
+        "title": "Nova Categoria Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "item_sys_id",
+      "nova_categoria_sys_id"
+    ],
+    "title": "servicenow_mover_item_catalogoArguments",
+    "type": "object"
+  }
+}

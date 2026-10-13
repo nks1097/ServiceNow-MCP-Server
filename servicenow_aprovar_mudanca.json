@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_aprovar_mudanca",
+  "description": "Aprova formalmente uma requisição de mudança na tabela 'sysapproval_approver'.",
+  "parameters": {
+    "properties": {
+      "mudanca_sys_id": {
+        "title": "Mudanca Sys Id",
+        "type": "string"
+      },
+      "comentario_aprovacao": {
+        "default": "Aprovado pelo Agente SOAR / Auditoria.",
+        "title": "Comentario Aprovacao",
+        "type": "string"
+      }
+    },
+    "required": [
+      "mudanca_sys_id"
+    ],
+    "title": "servicenow_aprovar_mudancaArguments",
+    "type": "object"
+  }
+}

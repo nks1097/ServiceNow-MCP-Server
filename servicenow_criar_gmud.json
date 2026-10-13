@@ -1,0 +1,52 @@
+{
+  "name": "servicenow_criar_gmud",
+  "description": "Alias direto para criar_solicitacao_mudanca.",
+  "parameters": {
+    "properties": {
+      "titulo": {
+        "title": "Titulo",
+        "type": "string"
+      },
+      "descricao": {
+        "title": "Descricao",
+        "type": "string"
+      },
+      "tipo_mudanca": {
+        "default": "normal",
+        "title": "Tipo Mudanca",
+        "type": "string"
+      },
+      "justificativa": {
+        "default": "",
+        "title": "Justificativa",
+        "type": "string"
+      },
+      "plano_implementacao": {
+        "default": "",
+        "title": "Plano Implementacao",
+        "type": "string"
+      },
+      "plano_rollback": {
+        "default": "",
+        "title": "Plano Rollback",
+        "type": "string"
+      },
+      "ativo_afetado": {
+        "default": "",
+        "title": "Ativo Afetado",
+        "type": "string"
+      },
+      "risco": {
+        "default": "moderate",
+        "title": "Risco",
+        "type": "string"
+      }
+    },
+    "required": [
+      "titulo",
+      "descricao"
+    ],
+    "title": "servicenow_criar_gmudArguments",
+    "type": "object"
+  }
+}

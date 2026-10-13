@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_adicionar_comentario",
+  "description": "Adiciona um comentário público ao incidente visível para o cliente/solicitante.",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "comentario": {
+        "title": "Comentario",
+        "type": "string"
+      }
+    },
+    "required": [
+      "sys_id",
+      "comentario"
+    ],
+    "title": "servicenow_adicionar_comentarioArguments",
+    "type": "object"
+  }
+}

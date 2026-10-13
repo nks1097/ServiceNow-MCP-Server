@@ -1,0 +1,42 @@
+{
+  "name": "servicenow_atualizar_script_include",
+  "description": "Atualiza o código ou configurações de um Script Include existente.",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "codigo_javascript": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Codigo Javascript"
+      },
+      "dados_json": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Dados Json"
+      }
+    },
+    "required": [
+      "sys_id"
+    ],
+    "title": "servicenow_atualizar_script_includeArguments",
+    "type": "object"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "servicenow_listar_catalogos",
+  "description": "Lista catálogos de serviços cadastrados (tabela sc_catalog).",
+  "parameters": {
+    "properties": {
+      "limite": {
+        "default": 10,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "title": "servicenow_listar_catalogosArguments",
+    "type": "object"
+  }
+}

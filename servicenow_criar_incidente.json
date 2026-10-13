@@ -1,0 +1,80 @@
+{
+  "name": "servicenow_criar_incidente",
+  "description": "Cria um novo incidente no ServiceNow com prioridade, categoria e ativo impactado.",
+  "parameters": {
+    "properties": {
+      "titulo": {
+        "title": "Titulo",
+        "type": "string"
+      },
+      "descricao": {
+        "title": "Descricao",
+        "type": "string"
+      },
+      "urgencia_1_a_3": {
+        "default": "2",
+        "title": "Urgencia 1 A 3",
+        "type": "string"
+      },
+      "impacto_1_a_3": {
+        "default": "2",
+        "title": "Impacto 1 A 3",
+        "type": "string"
+      },
+      "categoria": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "Inquiry / Help",
+        "title": "Categoria"
+      },
+      "solicitante": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Solicitante"
+      },
+      "ativo_cmdb": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Ativo Cmdb"
+      },
+      "grupo_atribuicao": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Grupo Atribuicao"
+      }
+    },
+    "required": [
+      "titulo",
+      "descricao"
+    ],
+    "title": "servicenow_criar_incidenteArguments",
+    "type": "object"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "servicenow_publicar_conjunto_alteracoes",
+  "description": "Publica ou exporta o Update Set marcando-o como concluído.",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "sys_id"
+    ],
+    "title": "servicenow_publicar_conjunto_alteracoesArguments",
+    "type": "object"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_consultar_auditoria",
+  "description": "Consulta o histórico forense de alterações na tabela 'sys_audit' para um registro.",
+  "parameters": {
+    "properties": {
+      "tabela": {
+        "title": "Tabela",
+        "type": "string"
+      },
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "limite": {
+        "default": 20,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "tabela",
+      "sys_id"
+    ],
+    "title": "servicenow_consultar_auditoriaArguments",
+    "type": "object"
+  }
+}

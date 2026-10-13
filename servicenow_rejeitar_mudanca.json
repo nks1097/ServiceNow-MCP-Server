@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_rejeitar_mudanca",
+  "description": "Rejeita formalmente uma requisição de mudança na tabela 'sysapproval_approver'.",
+  "parameters": {
+    "properties": {
+      "mudanca_sys_id": {
+        "title": "Mudanca Sys Id",
+        "type": "string"
+      },
+      "motivo_rejeicao": {
+        "title": "Motivo Rejeicao",
+        "type": "string"
+      }
+    },
+    "required": [
+      "mudanca_sys_id",
+      "motivo_rejeicao"
+    ],
+    "title": "servicenow_rejeitar_mudancaArguments",
+    "type": "object"
+  }
+}

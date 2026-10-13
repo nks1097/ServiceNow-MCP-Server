@@ -1,0 +1,37 @@
+{
+  "name": "servicenow_criar_variavel_item_catalogo",
+  "description": "Cria uma nova variável/pergunta de formulário para um item de catálogo (tabela item_option_new).",
+  "parameters": {
+    "properties": {
+      "item_catalogo_sys_id": {
+        "title": "Item Catalogo Sys Id",
+        "type": "string"
+      },
+      "nome_tecnico": {
+        "title": "Nome Tecnico",
+        "type": "string"
+      },
+      "rotulo_pergunta": {
+        "title": "Rotulo Pergunta",
+        "type": "string"
+      },
+      "tipo_campo": {
+        "default": 6,
+        "title": "Tipo Campo",
+        "type": "integer"
+      },
+      "obrigatorio": {
+        "default": false,
+        "title": "Obrigatorio",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "item_catalogo_sys_id",
+      "nome_tecnico",
+      "rotulo_pergunta"
+    ],
+    "title": "servicenow_criar_variavel_item_catalogoArguments",
+    "type": "object"
+  }
+}

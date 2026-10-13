@@ -1,0 +1,17 @@
+{
+  "name": "servicenow_obter_detalhes_conjunto_alteracoes",
+  "description": "Obtém os detalhes e arquivos XML contidos em um Update Set (sys_update_set).",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "sys_id"
+    ],
+    "title": "servicenow_obter_detalhes_conjunto_alteracoesArguments",
+    "type": "object"
+  }
+}

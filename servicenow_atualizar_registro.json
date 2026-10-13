@@ -1,0 +1,28 @@
+{
+  "name": "servicenow_atualizar_registro",
+  "description": "Atualiza campos de um registro existente via PATCH.",
+  "parameters": {
+    "properties": {
+      "tabela": {
+        "title": "Tabela",
+        "type": "string"
+      },
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "dados_json": {
+        "additionalProperties": true,
+        "title": "Dados Json",
+        "type": "object"
+      }
+    },
+    "required": [
+      "tabela",
+      "sys_id",
+      "dados_json"
+    ],
+    "title": "servicenow_atualizar_registroArguments",
+    "type": "object"
+  }
+}

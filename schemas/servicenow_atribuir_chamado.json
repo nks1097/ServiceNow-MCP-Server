@@ -1,0 +1,58 @@
+{
+  "name": "servicenow_atribuir_chamado",
+  "description": "Atribui automaticamente um chamado a um grupo e/ou analista específico.",
+  "parameters": {
+    "properties": {
+      "tabela": {
+        "title": "Tabela",
+        "type": "string"
+      },
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "grupo_ou_sys_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Grupo Ou Sys Id"
+      },
+      "analista_ou_sys_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Analista Ou Sys Id"
+      },
+      "nota_atribuicao": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Nota Atribuicao"
+      }
+    },
+    "required": [
+      "tabela",
+      "sys_id"
+    ],
+    "title": "servicenow_atribuir_chamadoArguments",
+    "type": "object"
+  }
+}

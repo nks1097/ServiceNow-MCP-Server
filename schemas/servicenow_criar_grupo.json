@@ -1,0 +1,32 @@
+{
+  "name": "servicenow_criar_grupo",
+  "description": "Cria um novo grupo de suporte/atendimento na tabela 'sys_user_group'.",
+  "parameters": {
+    "properties": {
+      "nome_grupo": {
+        "title": "Nome Grupo",
+        "type": "string"
+      },
+      "descricao": {
+        "default": "",
+        "title": "Descricao",
+        "type": "string"
+      },
+      "email": {
+        "default": "",
+        "title": "Email",
+        "type": "string"
+      },
+      "gerente_sys_id": {
+        "default": "",
+        "title": "Gerente Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "nome_grupo"
+    ],
+    "title": "servicenow_criar_grupoArguments",
+    "type": "object"
+  }
+}

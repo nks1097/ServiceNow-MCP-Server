@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_listar_anexos",
+  "description": "Lista anexos vinculados a um registro específico (tabela sys_attachment).",
+  "parameters": {
+    "properties": {
+      "tabela": {
+        "title": "Tabela",
+        "type": "string"
+      },
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "tabela",
+      "sys_id"
+    ],
+    "title": "servicenow_listar_anexosArguments",
+    "type": "object"
+  }
+}

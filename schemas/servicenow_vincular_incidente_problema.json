@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_vincular_incidente_problema",
+  "description": "Associa um incidente a um problema pai existente (campo problem_id).",
+  "parameters": {
+    "properties": {
+      "incidente_sys_id": {
+        "title": "Incidente Sys Id",
+        "type": "string"
+      },
+      "problema_sys_id": {
+        "title": "Problema Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "incidente_sys_id",
+      "problema_sys_id"
+    ],
+    "title": "servicenow_vincular_incidente_problemaArguments",
+    "type": "object"
+  }
+}

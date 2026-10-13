@@ -1,0 +1,17 @@
+{
+  "name": "servicenow_listar_variaveis_item_catalogo",
+  "description": "Lista todas as variáveis (perguntas/campos) associadas a um item de catálogo.",
+  "parameters": {
+    "properties": {
+      "item_catalogo_sys_id": {
+        "title": "Item Catalogo Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "item_catalogo_sys_id"
+    ],
+    "title": "servicenow_listar_variaveis_item_catalogoArguments",
+    "type": "object"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_listar_conjuntos_alteracoes",
+  "description": "Lista Update Sets / Conjuntos de Alterações no ServiceNow (tabela sys_update_set).",
+  "parameters": {
+    "properties": {
+      "filtro_nome": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Filtro Nome"
+      },
+      "limite": {
+        "default": 15,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "title": "servicenow_listar_conjuntos_alteracoesArguments",
+    "type": "object"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_listar_grupos",
+  "description": "Lista grupos de atendimento cadastrados na tabela 'sys_user_group'.",
+  "parameters": {
+    "properties": {
+      "filtro_nome": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Filtro Nome"
+      },
+      "limite": {
+        "default": 20,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "title": "servicenow_listar_gruposArguments",
+    "type": "object"
+  }
+}

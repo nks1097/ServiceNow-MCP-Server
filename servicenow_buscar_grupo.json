@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_buscar_grupo",
+  "description": "Alias compatível para buscar grupos.",
+  "parameters": {
+    "properties": {
+      "nome_grupo": {
+        "title": "Nome Grupo",
+        "type": "string"
+      },
+      "limite": {
+        "default": 10,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "nome_grupo"
+    ],
+    "title": "servicenow_buscar_grupoArguments",
+    "type": "object"
+  }
+}

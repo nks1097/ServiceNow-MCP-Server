@@ -1,0 +1,46 @@
+{
+  "name": "servicenow_obter_estatisticas_tabela",
+  "description": "Executa cálculos agregados e contagens na Aggregate API (/api/now/stats/{table}).",
+  "parameters": {
+    "properties": {
+      "tabela": {
+        "title": "Tabela",
+        "type": "string"
+      },
+      "query": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Query"
+      },
+      "agrupar_por": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Agrupar Por"
+      },
+      "campo_agregado": {
+        "default": "COUNT",
+        "title": "Campo Agregado",
+        "type": "string"
+      }
+    },
+    "required": [
+      "tabela"
+    ],
+    "title": "servicenow_obter_estatisticas_tabelaArguments",
+    "type": "object"
+  }
+}

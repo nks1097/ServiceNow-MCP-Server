@@ -1,0 +1,23 @@
+{
+  "name": "servicenow_atualizar_item_catalogo",
+  "description": "Atualiza propriedades de um item do catálogo de serviços (preço, descrição, disponibilidade).",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "dados_json": {
+        "additionalProperties": true,
+        "title": "Dados Json",
+        "type": "object"
+      }
+    },
+    "required": [
+      "sys_id",
+      "dados_json"
+    ],
+    "title": "servicenow_atualizar_item_catalogoArguments",
+    "type": "object"
+  }
+}

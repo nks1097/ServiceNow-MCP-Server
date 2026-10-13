@@ -1,0 +1,17 @@
+{
+  "name": "servicenow_obter_script_include",
+  "description": "Obtém o código JavaScript e configurações de um Script Include específico (sys_script_include).",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "sys_id"
+    ],
+    "title": "servicenow_obter_script_includeArguments",
+    "type": "object"
+  }
+}

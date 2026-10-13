@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_excluir_fluxo_trabalho",
+  "description": "Exclui um fluxo de trabalho da tabela 'wf_workflow' (exige confirmar=True).",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "confirmar": {
+        "default": false,
+        "title": "Confirmar",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "sys_id"
+    ],
+    "title": "servicenow_excluir_fluxo_trabalhoArguments",
+    "type": "object"
+  }
+}

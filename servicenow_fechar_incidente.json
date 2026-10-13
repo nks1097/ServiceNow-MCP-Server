@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_fechar_incidente",
+  "description": "Alias compatível para fechamento/resolução de incidentes.",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "codigo_resolucao": {
+        "default": "Solved (Permanently)",
+        "title": "Codigo Resolucao",
+        "type": "string"
+      },
+      "notas_resolucao": {
+        "default": "Incidente mitigado e encerrado pelo SOAR Agent.",
+        "title": "Notas Resolucao",
+        "type": "string"
+      }
+    },
+    "required": [
+      "sys_id"
+    ],
+    "title": "servicenow_fechar_incidenteArguments",
+    "type": "object"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "servicenow_obter_artigo_conhecimento",
+  "description": "Obtém o conteúdo completo de um artigo de conhecimento por sys_id ou número (ex: KB0000008).",
+  "parameters": {
+    "properties": {
+      "sys_id_ou_numero": {
+        "title": "Sys Id Ou Numero",
+        "type": "string"
+      }
+    },
+    "required": [
+      "sys_id_ou_numero"
+    ],
+    "title": "servicenow_obter_artigo_conhecimentoArguments",
+    "type": "object"
+  }
+}

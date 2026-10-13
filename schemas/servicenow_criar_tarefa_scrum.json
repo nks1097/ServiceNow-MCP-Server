@@ -1,0 +1,32 @@
+{
+  "name": "servicenow_criar_tarefa_scrum",
+  "description": "Cria uma tarefa Scrum vinculada a uma história de usuário (tabela rm_scrum_task).",
+  "parameters": {
+    "properties": {
+      "historia_sys_id": {
+        "title": "Historia Sys Id",
+        "type": "string"
+      },
+      "titulo": {
+        "title": "Titulo",
+        "type": "string"
+      },
+      "tipo_tarefa": {
+        "default": "Development",
+        "title": "Tipo Tarefa",
+        "type": "string"
+      },
+      "horas_estimadas": {
+        "default": 4.0,
+        "title": "Horas Estimadas",
+        "type": "number"
+      }
+    },
+    "required": [
+      "historia_sys_id",
+      "titulo"
+    ],
+    "title": "servicenow_criar_tarefa_scrumArguments",
+    "type": "object"
+  }
+}

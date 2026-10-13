@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_criar_fluxo_trabalho",
+  "description": "Cria uma definição de fluxo de trabalho na tabela 'wf_workflow'.",
+  "parameters": {
+    "properties": {
+      "nome": {
+        "title": "Nome",
+        "type": "string"
+      },
+      "tabela_alvo": {
+        "title": "Tabela Alvo",
+        "type": "string"
+      },
+      "descricao": {
+        "default": "",
+        "title": "Descricao",
+        "type": "string"
+      }
+    },
+    "required": [
+      "nome",
+      "tabela_alvo"
+    ],
+    "title": "servicenow_criar_fluxo_trabalhoArguments",
+    "type": "object"
+  }
+}

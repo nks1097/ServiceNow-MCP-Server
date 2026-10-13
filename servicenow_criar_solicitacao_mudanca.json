@@ -1,0 +1,52 @@
+{
+  "name": "servicenow_criar_solicitacao_mudanca",
+  "description": "Cria uma nova solicitação de mudança (GMUD / change_request).",
+  "parameters": {
+    "properties": {
+      "titulo": {
+        "title": "Titulo",
+        "type": "string"
+      },
+      "descricao": {
+        "title": "Descricao",
+        "type": "string"
+      },
+      "tipo": {
+        "default": "normal",
+        "title": "Tipo",
+        "type": "string"
+      },
+      "risco": {
+        "default": "moderate",
+        "title": "Risco",
+        "type": "string"
+      },
+      "justificativa": {
+        "default": "",
+        "title": "Justificativa",
+        "type": "string"
+      },
+      "plano_implementacao": {
+        "default": "",
+        "title": "Plano Implementacao",
+        "type": "string"
+      },
+      "plano_rollback": {
+        "default": "",
+        "title": "Plano Rollback",
+        "type": "string"
+      },
+      "ativo_afetado": {
+        "default": "",
+        "title": "Ativo Afetado",
+        "type": "string"
+      }
+    },
+    "required": [
+      "titulo",
+      "descricao"
+    ],
+    "title": "servicenow_criar_solicitacao_mudancaArguments",
+    "type": "object"
+  }
+}

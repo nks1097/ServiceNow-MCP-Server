@@ -1,0 +1,46 @@
+{
+  "name": "servicenow_criar_artigo_conhecimento",
+  "description": "Cria um novo artigo na Base de Conhecimento (tabela kb_knowledge).",
+  "parameters": {
+    "properties": {
+      "titulo": {
+        "title": "Titulo",
+        "type": "string"
+      },
+      "conteudo_html": {
+        "title": "Conteudo Html",
+        "type": "string"
+      },
+      "base_conhecimento_sys_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Base Conhecimento Sys Id"
+      },
+      "topico": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "General",
+        "title": "Topico"
+      }
+    },
+    "required": [
+      "titulo",
+      "conteudo_html"
+    ],
+    "title": "servicenow_criar_artigo_conhecimentoArguments",
+    "type": "object"
+  }
+}

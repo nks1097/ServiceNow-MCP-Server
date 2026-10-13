@@ -1,0 +1,23 @@
+{
+  "name": "servicenow_atualizar_variavel_item_catalogo",
+  "description": "Atualiza uma variável existente de um item de catálogo (item_option_new).",
+  "parameters": {
+    "properties": {
+      "variavel_sys_id": {
+        "title": "Variavel Sys Id",
+        "type": "string"
+      },
+      "dados_json": {
+        "additionalProperties": true,
+        "title": "Dados Json",
+        "type": "object"
+      }
+    },
+    "required": [
+      "variavel_sys_id",
+      "dados_json"
+    ],
+    "title": "servicenow_atualizar_variavel_item_catalogoArguments",
+    "type": "object"
+  }
+}

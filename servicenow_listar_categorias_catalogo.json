@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_listar_categorias_catalogo",
+  "description": "Lista categorias de itens do catálogo de serviços (tabela sc_category).",
+  "parameters": {
+    "properties": {
+      "catalogo_sys_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Catalogo Sys Id"
+      },
+      "limite": {
+        "default": 30,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "title": "servicenow_listar_categorias_catalogoArguments",
+    "type": "object"
+  }
+}

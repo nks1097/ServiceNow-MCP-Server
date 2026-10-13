@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_consultar_cmdb",
+  "description": "Pesquisa ativos na base CMDB (servidores, firewalls, VMs, roteadores).",
+  "parameters": {
+    "properties": {
+      "termo_busca": {
+        "title": "Termo Busca",
+        "type": "string"
+      },
+      "classe_ci": {
+        "default": "cmdb_ci",
+        "title": "Classe Ci",
+        "type": "string"
+      },
+      "limite": {
+        "default": 10,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "termo_busca"
+    ],
+    "title": "servicenow_consultar_cmdbArguments",
+    "type": "object"
+  }
+}

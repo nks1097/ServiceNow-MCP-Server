@@ -1,0 +1,32 @@
+{
+  "name": "servicenow_listar_artigos_conhecimento",
+  "description": "Lista artigos da base de conhecimento com opções de filtragem.",
+  "parameters": {
+    "properties": {
+      "termo_busca": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Termo Busca"
+      },
+      "apenas_publicados": {
+        "default": true,
+        "title": "Apenas Publicados",
+        "type": "boolean"
+      },
+      "limite": {
+        "default": 15,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "title": "servicenow_listar_artigos_conhecimentoArguments",
+    "type": "object"
+  }
+}

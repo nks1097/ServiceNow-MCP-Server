@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_listar_fluxos_trabalho",
+  "description": "Lista fluxos de trabalho tradicionais cadastrados em 'wf_workflow'.",
+  "parameters": {
+    "properties": {
+      "filtro_nome": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Filtro Nome"
+      },
+      "limite": {
+        "default": 20,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "title": "servicenow_listar_fluxos_trabalhoArguments",
+    "type": "object"
+  }
+}

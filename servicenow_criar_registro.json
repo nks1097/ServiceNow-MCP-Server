@@ -1,0 +1,23 @@
+{
+  "name": "servicenow_criar_registro",
+  "description": "Cria um novo registro em qualquer tabela do ServiceNow.",
+  "parameters": {
+    "properties": {
+      "tabela": {
+        "title": "Tabela",
+        "type": "string"
+      },
+      "dados_json": {
+        "additionalProperties": true,
+        "title": "Dados Json",
+        "type": "object"
+      }
+    },
+    "required": [
+      "tabela",
+      "dados_json"
+    ],
+    "title": "servicenow_criar_registroArguments",
+    "type": "object"
+  }
+}

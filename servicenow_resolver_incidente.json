@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_resolver_incidente",
+  "description": "Resolve formalmente um incidente no ServiceNow alterando o estado para 'Resolved' (state=6).",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "codigo_resolucao": {
+        "default": "Solved (Permanently)",
+        "title": "Codigo Resolucao",
+        "type": "string"
+      },
+      "notas_resolucao": {
+        "default": "Incidente resolvido com sucesso.",
+        "title": "Notas Resolucao",
+        "type": "string"
+      }
+    },
+    "required": [
+      "sys_id"
+    ],
+    "title": "servicenow_resolver_incidenteArguments",
+    "type": "object"
+  }
+}

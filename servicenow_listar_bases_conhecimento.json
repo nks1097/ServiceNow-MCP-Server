@@ -1,0 +1,15 @@
+{
+  "name": "servicenow_listar_bases_conhecimento",
+  "description": "Lista as Bases de Conhecimento disponíveis no ServiceNow (kb_knowledge_base).",
+  "parameters": {
+    "properties": {
+      "limite": {
+        "default": 10,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "title": "servicenow_listar_bases_conhecimentoArguments",
+    "type": "object"
+  }
+}

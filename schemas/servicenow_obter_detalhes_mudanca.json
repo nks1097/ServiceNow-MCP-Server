@@ -1,0 +1,17 @@
+{
+  "name": "servicenow_obter_detalhes_mudanca",
+  "description": "Obtém detalhes completos de uma solicitação de mudança específica por sys_id ou número (ex: CHG0040007).",
+  "parameters": {
+    "properties": {
+      "sys_id_ou_numero": {
+        "title": "Sys Id Ou Numero",
+        "type": "string"
+      }
+    },
+    "required": [
+      "sys_id_ou_numero"
+    ],
+    "title": "servicenow_obter_detalhes_mudancaArguments",
+    "type": "object"
+  }
+}

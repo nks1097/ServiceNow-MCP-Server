@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_excluir_registro",
+  "description": "Exclui permanentemente um registro de qualquer tabela (exige confirmar=True).",
+  "parameters": {
+    "properties": {
+      "tabela": {
+        "title": "Tabela",
+        "type": "string"
+      },
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "confirmar": {
+        "default": false,
+        "title": "Confirmar",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "tabela",
+      "sys_id"
+    ],
+    "title": "servicenow_excluir_registroArguments",
+    "type": "object"
+  }
+}

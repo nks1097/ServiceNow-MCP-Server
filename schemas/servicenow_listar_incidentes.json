@@ -1,0 +1,32 @@
+{
+  "name": "servicenow_listar_incidentes",
+  "description": "Lista incidentes no ServiceNow com opções de filtros codificados e ordenação.",
+  "parameters": {
+    "properties": {
+      "filtro_query": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Filtro Query"
+      },
+      "limite": {
+        "default": 20,
+        "title": "Limite",
+        "type": "integer"
+      },
+      "apenas_ativos": {
+        "default": true,
+        "title": "Apenas Ativos",
+        "type": "boolean"
+      }
+    },
+    "title": "servicenow_listar_incidentesArguments",
+    "type": "object"
+  }
+}

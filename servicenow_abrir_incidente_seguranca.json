@@ -1,0 +1,54 @@
+{
+  "name": "servicenow_abrir_incidente_seguranca",
+  "description": "Abre um incidente de segurança formal de alta prioridade (P1) com detalhes de ameaça e IoCs.",
+  "parameters": {
+    "properties": {
+      "titulo": {
+        "title": "Titulo",
+        "type": "string"
+      },
+      "descricao": {
+        "title": "Descricao",
+        "type": "string"
+      },
+      "severidade_1_a_3": {
+        "default": "1",
+        "title": "Severidade 1 A 3",
+        "type": "string"
+      },
+      "ip_ou_host_afetado": {
+        "default": "",
+        "title": "Ip Ou Host Afetado",
+        "type": "string"
+      },
+      "categoria": {
+        "default": "inquiry",
+        "title": "Categoria",
+        "type": "string"
+      },
+      "subcategoria": {
+        "default": "",
+        "title": "Subcategoria",
+        "type": "string"
+      },
+      "caller_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Caller Id"
+      }
+    },
+    "required": [
+      "titulo",
+      "descricao"
+    ],
+    "title": "servicenow_abrir_incidente_segurancaArguments",
+    "type": "object"
+  }
+}

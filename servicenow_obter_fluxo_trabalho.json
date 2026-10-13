@@ -1,0 +1,17 @@
+{
+  "name": "servicenow_obter_fluxo_trabalho",
+  "description": "Obtém detalhes de um fluxo de trabalho específico em 'wf_workflow'.",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "sys_id"
+    ],
+    "title": "servicenow_obter_fluxo_trabalhoArguments",
+    "type": "object"
+  }
+}

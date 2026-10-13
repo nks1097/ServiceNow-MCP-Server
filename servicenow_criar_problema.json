@@ -1,0 +1,68 @@
+{
+  "name": "servicenow_criar_problema",
+  "description": "Abre um novo registro formal de Problema (tabela 'problem').",
+  "parameters": {
+    "properties": {
+      "titulo": {
+        "title": "Titulo",
+        "type": "string"
+      },
+      "descricao": {
+        "title": "Descricao",
+        "type": "string"
+      },
+      "urgencia_1_a_3": {
+        "default": "2",
+        "title": "Urgencia 1 A 3",
+        "type": "string"
+      },
+      "impacto_1_a_3": {
+        "default": "2",
+        "title": "Impacto 1 A 3",
+        "type": "string"
+      },
+      "causa_raiz_conhecida": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Causa Raiz Conhecida"
+      },
+      "solucao_contorno_workaround": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Solucao Contorno Workaround"
+      },
+      "cmdb_ci": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Cmdb Ci"
+      }
+    },
+    "required": [
+      "titulo",
+      "descricao"
+    ],
+    "title": "servicenow_criar_problemaArguments",
+    "type": "object"
+  }
+}

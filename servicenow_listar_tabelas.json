@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_listar_tabelas",
+  "description": "Lista tabelas cadastradas no ServiceNow consultando 'sys_db_object'.",
+  "parameters": {
+    "properties": {
+      "filtro_nome": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Filtro Nome"
+      },
+      "limite": {
+        "default": 30,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "title": "servicenow_listar_tabelasArguments",
+    "type": "object"
+  }
+}

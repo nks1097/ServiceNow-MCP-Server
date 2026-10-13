@@ -1,0 +1,17 @@
+{
+  "name": "servicenow_obter_item_catalogo",
+  "description": "Obtém detalhes completos de um item de catálogo de serviços específico por sys_id.",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "sys_id"
+    ],
+    "title": "servicenow_obter_item_catalogoArguments",
+    "type": "object"
+  }
+}

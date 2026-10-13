@@ -1,0 +1,17 @@
+{
+  "name": "servicenow_obter_usuario",
+  "description": "Obtém detalhes de um usuário por login (user_name), e-mail ou sys_id.",
+  "parameters": {
+    "properties": {
+      "login_ou_email_ou_sys_id": {
+        "title": "Login Ou Email Ou Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "login_ou_email_ou_sys_id"
+    ],
+    "title": "servicenow_obter_usuarioArguments",
+    "type": "object"
+  }
+}

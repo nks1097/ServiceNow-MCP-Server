@@ -1,0 +1,15 @@
+{
+  "name": "servicenow_listar_projetos",
+  "description": "Lista projetos cadastrados na tabela 'pm_project'.",
+  "parameters": {
+    "properties": {
+      "limite": {
+        "default": 15,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "title": "servicenow_listar_projetosArguments",
+    "type": "object"
+  }
+}

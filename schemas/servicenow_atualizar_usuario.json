@@ -1,0 +1,23 @@
+{
+  "name": "servicenow_atualizar_usuario",
+  "description": "Atualiza campos de um usuário existente na tabela 'sys_user'.",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "dados_json": {
+        "additionalProperties": true,
+        "title": "Dados Json",
+        "type": "object"
+      }
+    },
+    "required": [
+      "sys_id",
+      "dados_json"
+    ],
+    "title": "servicenow_atualizar_usuarioArguments",
+    "type": "object"
+  }
+}

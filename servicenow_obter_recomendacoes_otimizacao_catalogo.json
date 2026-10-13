@@ -1,0 +1,9 @@
+{
+  "name": "servicenow_obter_recomendacoes_otimizacao_catalogo",
+  "description": "Analisa o catálogo de serviços identificando itens sem categoria, inativos ou sem descrição.",
+  "parameters": {
+    "properties": {},
+    "title": "servicenow_obter_recomendacoes_otimizacao_catalogoArguments",
+    "type": "object"
+  }
+}

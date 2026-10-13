@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_listar_tarefas_scrum",
+  "description": "Lista tarefas scrum com opção de filtrar por história pai.",
+  "parameters": {
+    "properties": {
+      "historia_sys_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Historia Sys Id"
+      },
+      "limite": {
+        "default": 20,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "title": "servicenow_listar_tarefas_scrumArguments",
+    "type": "object"
+  }
+}

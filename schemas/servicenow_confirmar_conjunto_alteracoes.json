@@ -1,0 +1,17 @@
+{
+  "name": "servicenow_confirmar_conjunto_alteracoes",
+  "description": "Marca um Update Set como concluído ('complete') pronto para exportação/deploy.",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "sys_id"
+    ],
+    "title": "servicenow_confirmar_conjunto_alteracoesArguments",
+    "type": "object"
+  }
+}

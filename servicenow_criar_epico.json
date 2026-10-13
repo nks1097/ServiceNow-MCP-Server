@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_criar_epico",
+  "description": "Cria um novo Épico na tabela 'rm_epic' do Agile Development.",
+  "parameters": {
+    "properties": {
+      "titulo": {
+        "title": "Titulo",
+        "type": "string"
+      },
+      "descricao": {
+        "default": "",
+        "title": "Descricao",
+        "type": "string"
+      },
+      "projeto_sys_id": {
+        "default": "",
+        "title": "Projeto Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "titulo"
+    ],
+    "title": "servicenow_criar_epicoArguments",
+    "type": "object"
+  }
+}

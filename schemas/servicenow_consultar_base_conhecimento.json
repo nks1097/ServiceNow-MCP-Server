@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_consultar_base_conhecimento",
+  "description": "Alias compatível para pesquisar artigos na base de conhecimento.",
+  "parameters": {
+    "properties": {
+      "termo_busca": {
+        "title": "Termo Busca",
+        "type": "string"
+      },
+      "limite": {
+        "default": 5,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "termo_busca"
+    ],
+    "title": "servicenow_consultar_base_conhecimentoArguments",
+    "type": "object"
+  }
+}

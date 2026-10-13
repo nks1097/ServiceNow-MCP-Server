@@ -1,0 +1,56 @@
+{
+  "name": "servicenow_criar_historia",
+  "description": "Cria uma nova história de usuário (User Story) na tabela 'rm_story'.",
+  "parameters": {
+    "properties": {
+      "titulo": {
+        "title": "Titulo",
+        "type": "string"
+      },
+      "descricao": {
+        "title": "Descricao",
+        "type": "string"
+      },
+      "pontos_historia": {
+        "default": 3,
+        "title": "Pontos Historia",
+        "type": "integer"
+      },
+      "epico_sys_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Epico Sys Id"
+      },
+      "atribuido_a": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Atribuido A"
+      },
+      "prioridade": {
+        "default": "3",
+        "title": "Prioridade",
+        "type": "string"
+      }
+    },
+    "required": [
+      "titulo",
+      "descricao"
+    ],
+    "title": "servicenow_criar_historiaArguments",
+    "type": "object"
+  }
+}

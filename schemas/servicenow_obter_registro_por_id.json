@@ -1,0 +1,39 @@
+{
+  "name": "servicenow_obter_registro_por_id",
+  "description": "Busca os detalhes de um registro específico pelo seu sys_id único.",
+  "parameters": {
+    "properties": {
+      "tabela": {
+        "title": "Tabela",
+        "type": "string"
+      },
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "campos": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Campos"
+      },
+      "incluir_display_value": {
+        "default": false,
+        "title": "Incluir Display Value",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "tabela",
+      "sys_id"
+    ],
+    "title": "servicenow_obter_registro_por_idArguments",
+    "type": "object"
+  }
+}

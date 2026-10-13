@@ -1,0 +1,37 @@
+{
+  "name": "servicenow_anexar_arquivo",
+  "description": "Faz upload de arquivo/evidência forense como anexo em um registro (Attachment API).",
+  "parameters": {
+    "properties": {
+      "tabela": {
+        "title": "Tabela",
+        "type": "string"
+      },
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "nome_arquivo": {
+        "title": "Nome Arquivo",
+        "type": "string"
+      },
+      "conteudo_texto_ou_base64": {
+        "title": "Conteudo Texto Ou Base64",
+        "type": "string"
+      },
+      "eh_base64": {
+        "default": false,
+        "title": "Eh Base64",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "tabela",
+      "sys_id",
+      "nome_arquivo",
+      "conteudo_texto_ou_base64"
+    ],
+    "title": "servicenow_anexar_arquivoArguments",
+    "type": "object"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "servicenow_criar_projeto",
+  "description": "Cria um novo projeto formal no ServiceNow (tabela pm_project).",
+  "parameters": {
+    "properties": {
+      "nome_projeto": {
+        "title": "Nome Projeto",
+        "type": "string"
+      },
+      "descricao": {
+        "default": "",
+        "title": "Descricao",
+        "type": "string"
+      },
+      "gerente_sys_id": {
+        "default": "",
+        "title": "Gerente Sys Id",
+        "type": "string"
+      },
+      "prioridade": {
+        "default": "3",
+        "title": "Prioridade",
+        "type": "string"
+      }
+    },
+    "required": [
+      "nome_projeto"
+    ],
+    "title": "servicenow_criar_projetoArguments",
+    "type": "object"
+  }
+}

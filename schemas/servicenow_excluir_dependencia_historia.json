@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_excluir_dependencia_historia",
+  "description": "Exclui uma dependência entre histórias de usuário.",
+  "parameters": {
+    "properties": {
+      "dependencia_sys_id": {
+        "title": "Dependencia Sys Id",
+        "type": "string"
+      },
+      "confirmar": {
+        "default": true,
+        "title": "Confirmar",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "dependencia_sys_id"
+    ],
+    "title": "servicenow_excluir_dependencia_historiaArguments",
+    "type": "object"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "servicenow_publicar_artigo_conhecimento",
+  "description": "Publica formalmente um artigo de conhecimento (workflow_state='published').",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "sys_id"
+    ],
+    "title": "servicenow_publicar_artigo_conhecimentoArguments",
+    "type": "object"
+  }
+}

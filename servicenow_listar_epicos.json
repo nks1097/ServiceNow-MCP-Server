@@ -1,0 +1,15 @@
+{
+  "name": "servicenow_listar_epicos",
+  "description": "Lista Épicos cadastrados na tabela 'rm_epic'.",
+  "parameters": {
+    "properties": {
+      "limite": {
+        "default": 15,
+        "title": "Limite",
+        "type": "integer"
+      }
+    },
+    "title": "servicenow_listar_epicosArguments",
+    "type": "object"
+  }
+}

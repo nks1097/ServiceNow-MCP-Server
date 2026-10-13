@@ -1,0 +1,37 @@
+{
+  "name": "servicenow_criar_usuario",
+  "description": "Cria um novo usuário na tabela 'sys_user'.",
+  "parameters": {
+    "properties": {
+      "login": {
+        "title": "Login",
+        "type": "string"
+      },
+      "nome_completo": {
+        "title": "Nome Completo",
+        "type": "string"
+      },
+      "email": {
+        "title": "Email",
+        "type": "string"
+      },
+      "cargo": {
+        "default": "",
+        "title": "Cargo",
+        "type": "string"
+      },
+      "departamento": {
+        "default": "",
+        "title": "Departamento",
+        "type": "string"
+      }
+    },
+    "required": [
+      "login",
+      "nome_completo",
+      "email"
+    ],
+    "title": "servicenow_criar_usuarioArguments",
+    "type": "object"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "servicenow_adicionar_membros_grupo",
+  "description": "Adiciona um usuário como membro de um grupo de atendimento (tabela sys_user_grmember).",
+  "parameters": {
+    "properties": {
+      "grupo_sys_id": {
+        "title": "Grupo Sys Id",
+        "type": "string"
+      },
+      "usuario_sys_id": {
+        "title": "Usuario Sys Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "grupo_sys_id",
+      "usuario_sys_id"
+    ],
+    "title": "servicenow_adicionar_membros_grupoArguments",
+    "type": "object"
+  }
+}

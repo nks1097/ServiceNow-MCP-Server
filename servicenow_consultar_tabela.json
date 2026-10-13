@@ -1,0 +1,63 @@
+{
+  "name": "servicenow_consultar_tabela",
+  "description": "Consulta registros em qualquer tabela do ServiceNow com filtros codificados.",
+  "parameters": {
+    "properties": {
+      "tabela": {
+        "title": "Tabela",
+        "type": "string"
+      },
+      "query": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Query"
+      },
+      "limite": {
+        "default": 10,
+        "title": "Limite",
+        "type": "integer"
+      },
+      "campos": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Campos"
+      },
+      "ordenar_por": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": "",
+        "title": "Ordenar Por"
+      },
+      "incluir_display_value": {
+        "default": false,
+        "title": "Incluir Display Value",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "tabela"
+    ],
+    "title": "servicenow_consultar_tabelaArguments",
+    "type": "object"
+  }
+}

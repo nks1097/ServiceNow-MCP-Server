@@ -1,0 +1,23 @@
+{
+  "name": "servicenow_atualizar_incidente",
+  "description": "Atualiza campos de um incidente existente no ServiceNow.",
+  "parameters": {
+    "properties": {
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "campos_json": {
+        "additionalProperties": true,
+        "title": "Campos Json",
+        "type": "object"
+      }
+    },
+    "required": [
+      "sys_id",
+      "campos_json"
+    ],
+    "title": "servicenow_atualizar_incidenteArguments",
+    "type": "object"
+  }
+}

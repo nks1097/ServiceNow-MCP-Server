@@ -1,0 +1,27 @@
+{
+  "name": "servicenow_adicionar_nota_tecnica",
+  "description": "Adiciona uma anotação de trabalho técnica interna ('work_notes') para a equipe.",
+  "parameters": {
+    "properties": {
+      "tabela": {
+        "title": "Tabela",
+        "type": "string"
+      },
+      "sys_id": {
+        "title": "Sys Id",
+        "type": "string"
+      },
+      "nota_tecnica": {
+        "title": "Nota Tecnica",
+        "type": "string"
+      }
+    },
+    "required": [
+      "tabela",
+      "sys_id",
+      "nota_tecnica"
+    ],
+    "title": "servicenow_adicionar_nota_tecnicaArguments",
+    "type": "object"
+  }
+}
